@@ -1,0 +1,10 @@
+.button{
+    width:360px;
+    color:black;
+    background-color: red;
+    border-radius:12px;
+    &:hover{
+        transform: scale(2);
+    }
+
+}
