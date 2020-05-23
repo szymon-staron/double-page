@@ -1,0 +1,100 @@
+@import "../../../styles/settings.scss";
+.topInside{
+    .containerNav{
+        font-family: $font-family;
+        width: 80%;
+        margin:0 auto;
+        text-align: center;
+        height: 104px;
+        >div{
+            height: 104px;
+            display:inline-block;
+            position: relative;
+            top:0;
+        }
+        >div>div{
+          position: absolute;
+          top:50%;
+          left:50%;
+          transform: translate(-50%,-50%);
+          overflow: hidden;
+        }
+    .topLogo{
+      background-color: pink;
+        width:25%;
+        font-weight: 200;
+    }
+    .topSearch{
+      width: 30%;
+      .form{
+        width: 80%;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        input{
+          width: calc(100% - 60px);
+          padding:10px 10px;
+          border:none;
+          background-color:$color-NavInside ;
+          font-size: $font-size-icon;
+        }
+        button{
+          font-size: $font-size-icon;
+          color:black;
+          padding:10px;
+          border:none;
+        }
+      }
+    
+    }
+    .topBasket{
+     
+    
+      width: 30%;
+      .basketCard{
+       background-color:$color-NavInside;
+       width: $top-inside-width;
+       padding:$padding-nav-top-inside;
+       text-align: left;
+       font-size: $font-size-icon;
+       .icon{
+         width: 40%;
+         
+         color:$color-icon-nav;
+         padding:10px;
+         background-color: $color-NavInside-icon;
+       }
+       .basket{
+         display: inline-block;
+         width: 60%;
+         margin-left:40px;
+         span{
+           color:black;
+           padding:0 2px;
+         }
+       }
+      }
+    }
+    .topAccont{
+      width: 15%;
+      .login{
+        padding:$padding-nav-top-inside;
+        width: $top-inside-width;
+        background-color: $color-NavInside;
+        text-align: left;
+        span{
+          background-color: $color-NavInside-icon;
+          padding:10px;
+          font-size: $font-size-icon;
+          color:$color-icon-nav;
+        }
+        a{
+          color:black;
+          text-decoration: none;
+          margin-left:20px;
+        }
+      }
+    }
+}
+}

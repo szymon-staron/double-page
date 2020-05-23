@@ -1,6 +1,33 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+/*font-family*/
+$font-family:'Roboto', sans-serif;
 
 
 /* font-size*/
 $font-size-title:25px;
+$font-size-nav:18px;
+$font-size-icon:16px;
+
+/* background-color*/
+$color-NavDown:#b70f23;
+$color-NavUp:#eeee;
+$color-NavInside:#F0F0F0;
+$color-NavInside-icon:red;
+
+/* background-color-hover*/
+$color-NavDown-hover:#b70f2352;
+
+/* Padding*/
+$padding-nav-list:15px 30px;
+$padding-nav-top-inside:10px 0;
+
+/*Color-font*/
+$color-navUp: black;
+$color-icon-nav:white;
+
+
+/* Margin*/
+$margin-nav-icon:0 10px;
+
+/*Width*/
+$top-inside-width:80%;
