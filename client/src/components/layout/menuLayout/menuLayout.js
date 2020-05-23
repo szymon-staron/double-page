@@ -1,5 +1,7 @@
 import React from 'react';
-import styles from './menuLayout.module.scss';
+//import styles from './menuLayout.module.scss';
+import Logo from '../../common/logo/logo';
+import Footer from '../footer/footer';
 
 
 class menuLayout extends React.Component {
@@ -7,8 +9,8 @@ class menuLayout extends React.Component {
 render(){
 
     return(
-        <div>
-            Zaczynamy zabawe z frontem
+        <div >
+            <Footer> </Footer>
         </div>
         )
 }
