@@ -1,79 +1,101 @@
+@import "../../../styles/settings.scss";
+
+footer{
+  background-color: $color-NavUp;
+  
+width: 100%;
+}
 .conteiner {
+ max-width: 1440px;
+  font-family: $font-family;
   position: relative;
   height: 350px;
-  margin: 0;
-  max-width: 100%;
-  background-color: rgb(182, 178, 176);
+  margin: 0 auto;
+ 
+
   > div {
+    overflow: hidden;
+    text-align: center;
+    width: 25%;
     position: absolute;
     top: 0;
     display: inline-block;
-    padding-left: 10px;
-    margin-left: 20px;
+    padding: 10px;
+    margin:0 20px;
+
     ul {
       list-style-type: none;
       padding: 0;
+
       li {
-        padding: 3px;
+        padding: 5px;
+      }
+      li:hover a{
+        color:red;
       }
     }
+
+    .title {
+      border-bottom: 1px solid $border-FooterColor;
+      padding: 5px 0px;
+      font-size: 18px;
+      font-weight: 700;
+      width: 80%;
+      margin: 0 auto;
+    }
   }
+
   a {
     text-decoration: none;
     color: black;
   }
+
   .bikeCentrum {
     left: 25%;
   }
+
   .joinTo {
+    
     left: 50%;
     text-align: center;
     li {
+      display: inline-block;
       padding-bottom: 15px;
     }
+
+    .facebookIcon {
+      color: #0000ff;
+      font-size: 42px;
+      background-color: white;
+      border-radius: 50%;
+      border: 0px solid #0000ff;
+    }
+
+    .instagramIcon {
+      display: inline-block;
+      padding: 0px 5px 0px 5px;
+      border-radius: 40px;
+      color: #fff;
+      font-size: 40px;
+      line-height: 25px;
+      background: #d6249f;
+      background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+      );
+    }
+
+    .youtubeIcon {
+      color: #ff0000;
+      font-size: 42px;
+    }
   }
+
   .aboutUs {
     left: 75%;
   }
-}
-.title {
-  border-bottom: 1px solid white;
-  padding: 5px 0px;
-  font-size: 25px;
-  font-weight: bolder;
-}
-
-.facebookIcon {
-  color: #0000ff;
-  font-size: 42px;
-  background-color: white;
-
-  border-radius: 50%;
-  border: 0px solid #0000ff;
-}
-
-.instagramIcon {
-  display: inline-block;
-  padding: 0px 5px 0px 5px;
-
-  text-align: center;
-  border-radius: 40px;
-  color: #fff;
-  font-size: 40px;
-  line-height: 25px;
-  vertical-align: middle;
-  background: #d6249f;
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-}
-
-.youtubeIcon {
-  color: #ff0000;
-  font-size: 42px;
 }
