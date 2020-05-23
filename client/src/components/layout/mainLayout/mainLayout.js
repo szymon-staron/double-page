@@ -6,6 +6,7 @@ const MainLayout=({children})=>(
     <div>
         <MainMenu/>
         {children}
+        
     </div>
 )
 
