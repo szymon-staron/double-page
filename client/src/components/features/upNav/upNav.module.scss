@@ -3,33 +3,42 @@
 .upNav {
   font-family: $font-family;
   background-color: $color-NavUp;
+  
   .containerNav {
     width: 80%;
     margin: 0 auto;
+    
   }
+
   ul {
     list-style-type: none;
     display: inline-block;
     margin: 0;
     padding: 10px 0px;
     text-align: right;
+
     li {
       display: inline-block;
       padding: 0 10px;
       color: $color-navUp;
     }
+
     li:first-of-type {
       padding: 0px;
     }
+
     li:last-of-type {
       padding-right: 20px;
     }
+
     a {
-      font-size:14px;
+      font-weight: 500;
+      font-size:12px;
       color: $color-navUp;
       text-decoration: none;
     }
   }
+  
   ul:first-of-type {
     width: 30%;
     text-align: left;
@@ -39,6 +48,7 @@
       color: black;
     }
   }
+
   ul:last-of-type {
     width: 70%;
   }
