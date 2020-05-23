@@ -1,7 +1,6 @@
 .conteiner {
-  height: 300px;
   position: relative;
-
+  height: 350px;
   margin: 0;
   max-width: 100%;
   background-color: rgb(182, 178, 176);
@@ -14,17 +13,23 @@
     ul {
       list-style-type: none;
       padding: 0;
+      li {
+        padding: 3px;
+      }
     }
+  }
+  a {
+    text-decoration: none;
+    color: black;
   }
   .bikeCentrum {
     left: 25%;
   }
   .joinTo {
     left: 50%;
-    li{
+    text-align: center;
+    li {
       padding-bottom: 15px;
-     
-
     }
   }
   .aboutUs {
@@ -32,6 +37,8 @@
   }
 }
 .title {
+  border-bottom: 1px solid white;
+  padding: 5px 0px;
   font-size: 25px;
   font-weight: bolder;
 }
@@ -40,14 +47,10 @@
   color: #0000ff;
   font-size: 42px;
   background-color: white;
-  
-  border-radius:50% ;
-  border:0px solid #0000ff;
-  
-  
+
+  border-radius: 50%;
+  border: 0px solid #0000ff;
 }
-
-
 
 .instagramIcon {
   display: inline-block;
@@ -68,11 +71,9 @@
     #d6249f 60%,
     #285aeb 90%
   );
- 
 }
 
 .youtubeIcon {
-  color: #FF0000;
+  color: #ff0000;
   font-size: 42px;
-  
 }

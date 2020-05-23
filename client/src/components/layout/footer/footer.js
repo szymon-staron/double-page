@@ -2,14 +2,14 @@ import React from "react";
 import styles from "./footer.module.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import {NavLink} from "react-router-dom";
 
 const Footer = () => (
   <div className={styles.conteiner}>
     <div className={styles.information}>
       <h3 className={styles.title}>Informacje</h3>
       <ul>
-<li>Formy płatności</li>
-<li>Zakupy na raty</li>
+<li><NavLink to="/form_to_pay">Formy płatności</NavLink></li>
 <li>Dostawa - czas i koszt</li>
 <li>Punkty odbioru rowerów</li>
 <li>Zwrot</li>
@@ -17,7 +17,6 @@ const Footer = () => (
 <li>Gwarancje producentów</li>
 <li>FAQ</li>
 <li>Regulamin sklepu</li>
-<li>Regulamin programu lojalnościowego</li>
       </ul>
     </div>
     <div className={styles.bikeCentrum}>
