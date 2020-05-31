@@ -1,44 +1,48 @@
 @import "../../../styles/settings.scss";
 
-
 .bottomBanner {
   width: 100%;
   height: 80px;
   margin-bottom: 40px;
   font-family: $font-family;
-  .banner{
+  .banner {
     padding: 15px;
     box-sizing: border-box;
-    border:1px solid #cacaca;
+    border: 1px solid #cacaca;
     width: 25%;
     display: inline-block;
     height: 100%;
-    &:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4){
-      border-left:0;
+    &:nth-of-type(2),
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+      border-left: 0;
     }
 
-    .icon,h3,p,.description{
-      margin:0;
+    .icon,
+    h3,
+    p,
+    .description {
+      margin: 0;
       display: inline-block;
       text-align: center;
     }
-    h3{
+    h3 {
       width: 100%;
     }
-    .icon{
+    .icon {
       font-size: 46px;
-      color:red;
+      color: $color-NavDown;
       width: 30%;
       height: 100%;
     }
-    .description{
+    .description {
       height: 50%;
       width: 70%;
     }
-    p{
+    p {
       font-size: 14px;
       width: 100%;
-      margin:5px;
+      margin: 5px;
     }
   }
 }

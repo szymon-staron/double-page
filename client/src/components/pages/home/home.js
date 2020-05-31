@@ -1,16 +1,17 @@
-import React from 'react';
-import styles from './home.module.scss'
-import Container from '../../layout/container/container';
+import React from "react";
+import Slider from "../../features/slider/slider";
+import Banner from "../../features/banner/banner";
+import ProductSlider from "../../features/productSlider/productSlider";
+import BottomBanner from '../../features/bottomBanner/bottomBanner';
 
-const Home =()=>(
-    <div className={styles.home}>
-        <div className={styles.sliderBgc}>
-
-        </div>
-    </div>
-)
-
-
-
+const Home = () => (
+  <section>
+    <Slider />
+    <Banner />
+    <ProductSlider title='Polecane produkty' />
+    <ProductSlider  title='Nowości'/>
+    <BottomBanner/>
+  </section>
+);
 
 export default Home;

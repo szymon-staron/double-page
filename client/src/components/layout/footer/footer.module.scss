@@ -6,7 +6,7 @@ footer{
 width: 100%;
 }
 .conteiner {
- max-width: 1440px;
+ max-width: 1220px;
   font-family: $font-family;
   position: relative;
   height: 350px;
@@ -21,11 +21,13 @@ width: 100%;
     top: 0;
     display: inline-block;
     padding: 10px;
-    margin:0 20px;
 
     ul {
       list-style-type: none;
       padding: 0;
+      width: 80%;
+      padding-top: 10px;
+      margin:0 auto;
 
       li {
         padding: 5px;
@@ -96,6 +98,7 @@ width: 100%;
   }
 
   .aboutUs {
+
     left: 75%;
   }
 }
