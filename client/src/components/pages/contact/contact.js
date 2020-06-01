@@ -10,25 +10,48 @@ const Contact = () => (
       <section>
         <article>
           <h3>Warszawa</h3>
-          <p> Adres: ul.Lorem Telefon: 997112122 Czynne 24:00-24:00</p>
+          <p>
+           
+            Adres: ul.Lorem
+            <span className={styles.new_line}> Telefon: 997112122</span>
+            <span className={styles.new_line}> Czynne: 24:00-24:00</span>
+          </p>
 
           <h3>Częstochowa</h3>
-          <p>Telefon: 214124124 Telefon: 214124124</p>
+          <p>
+            <span className={styles.new_line}>Telefon: 214124124</span>
+            <span className={styles.new_line}>Telefon: 214124124</span>
+          </p>
 
           <h3>Kraków</h3>
-          <p> Adres: ul.Lorem Telefon: 997112122 Czynne 24:00-24:00</p>
+          <p>
+            Adres: ul.Lorem
+            <span className={styles.new_line}>Telefon: 997112122</span>
+            <span className={styles.new_line}>Czynne 24:00-24:00</span>
+          </p>
 
           <h3>Poznań</h3>
-          <p> Adres: ul.Lorem Telefon: 997112122 Czynne 24:00-24:00</p>
+          <p>
+            Adres: ul.Lorem <span className={styles.new_line}>Telefon:
+            997112122</span> <span className={styles.new_line}>Czynne
+            24:00-24:00</span>
+          </p>
         </article>
         <article>
           <h1>Serwis</h1>
           <h3>Kraków</h3>
           <p>
-            Adres: ul.Jana Pablito II Telefon: 9329239432 Czynne: 17:00-20:00
+            Adres: ul.Jana Pablito II <span className={styles.new_line}>
+            Telefon: 9329239432</span> <span className={styles.new_line}>Czynne:
+            17:00-20:00</span>
           </p>
           <h3>Warszawa</h3>
-          <p> Adres: ul.Lorem Telefon: 997112122 Czynne: 24:00-24:00</p>
+          <p>
+            
+            Adres: ul.Lorem <span className={styles.new_line}>Telefon:
+            997112122</span> <span className={styles.new_line}>Czynne:
+            24:00-24:00</span>
+          </p>
         </article>
       </section>
       <div>
