@@ -34,6 +34,7 @@ class Slider extends Component {
     });
     console.log(this.state.interval);
   };
+  
   nextSlider = () => {
     if (
       this.state.activeImage < this.state.image.length - 1 &&
