@@ -1,9 +1,16 @@
+/** @jsx jsx */
+import { css, jsx } from "@emotion/core";
 import React from "react";
 import styles from "./productBox.module.scss";
 import Button from "../button/button";
 
-const ProductBox = () => (
-  <div className={styles.product}>
+const ProductBox = (props) => (
+  <div
+    className={styles.product}
+    css={css`
+      width: ${props.width};
+    `}
+  >
     <div className={styles.firstSection}>
       <img src="https://www.mediaexpert.pl/media/cache/gallery/product/3/862/849/348/d7vcgzvt/images/22/2292130/Z557269-2292132.jpg" />
       <div className={styles.labelProduct}>

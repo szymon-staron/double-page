@@ -2,21 +2,6 @@
 
 .productPage{
    display: grid;
-   grid-template-columns: 0.2fr 0.8fr;
-}
-.searchProductBox {
-
-    background-color: red;
-   
-    display: inline-block;
-    .headerPanel{
-        background-color: yellowgreen;
-    }
-}
-.contentProduct{
-    .listOrder{
-        background-color: green;
-    }
-    display: inline-block;
-    background-color: yellow;
+   grid-template-columns: 0.25fr 1.75fr;
+   margin-top:30px;
 }
