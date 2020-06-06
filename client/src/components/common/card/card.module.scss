@@ -1,0 +1,12 @@
+.img {
+  object-fit: cover;
+  width: 1220px;
+  height: 100%;
+  display: inline-block;
+  transition: 1s linear all;
+  img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+}

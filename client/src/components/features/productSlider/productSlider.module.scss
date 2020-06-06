@@ -1,0 +1,53 @@
+@import "../../../styles/settings.scss";
+
+.slider {
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  position: relative;
+  .arrowBox {
+    z-index: 999999;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba($color: #f9f9f9, $alpha: 0.8);
+    width: 50px;
+    height: 100%;
+  }
+  &:hover .arrowBox {
+    display: inline-block;
+  }
+  .left {
+    left: 0;
+  }
+  .sliderList {
+    width: 100%;
+    height: 100%;
+  }
+  .dots{
+      width: 100%;
+      text-align: center;
+      ul{
+          margin:0;
+          padding:0;
+      }
+      li{
+          display: inline-block;
+          border-radius: 50%;
+          margin:10px;
+          width: 13px;
+          height: 13px;
+          background-color: black;
+          list-style-type: none;
+          text-indent: -99999px;
+      }
+      .active{
+          border:1.5px solid red;
+      }
+  }
+}
+.title {
+  font-size: 32px;
+  font-weight: 700;
+}
