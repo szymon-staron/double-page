@@ -1,0 +1,64 @@
+@import "../../../styles/settings.scss";
+
+.product {
+  font-family: $font-family;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: inline-block;
+  width: calc(25% - 20px);
+  height: 100%;
+  margin: 0 10px;
+  text-align: center;
+  border: 1px solid $border-gray;
+  .firstSection {
+    position: relative;
+    text-align: left;
+    height: 70%;
+    border-bottom: 1px solid $border-gray;
+    overflow: hidden;
+    .description {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 300;
+      margin: 5px;
+    }
+    .labelProduct {
+      position: absolute;
+      top: 0;
+      padding: 3px;
+      font-weight: 700;
+      overflow: hidden;
+    }
+    span {
+      padding: 5px;
+      color: white;
+      font-size: 12px;
+      background-color: $color-NavDown;
+      margin: 5px 2px;
+    }
+    img {
+      position: relative;
+      width: 100%;
+      height: 70%;
+      margin-top: 25px;
+    }
+  }
+  .secondSection {
+    .price {
+      margin: 25px;
+      margin-bottom: 0;
+      font-weight: 900;
+      font-size: $font-size-price;
+      color:$color-NavDown;
+      span {
+        font-size: calc($font-size-price - 2px);
+      }
+    }
+    .oldPrice {
+      text-decoration: line-through;
+      font-size: $font-size-old-price;
+      font-weight: 300;
+      display: block;
+    }
+  }
+}

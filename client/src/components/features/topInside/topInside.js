@@ -50,7 +50,6 @@ const TopIside = () => {
             </span>
             <NavLink to='/accont'>Logowanie</NavLink>
           </div>
-          <div className={styles.registration}></div>
         </div>
       </div>
     </div>

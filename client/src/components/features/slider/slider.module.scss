@@ -1,0 +1,54 @@
+@import "../../../styles/settings.scss";
+
+.sliderBgc {
+  width: 100%;
+  background-color: #161f32;
+}
+.slider {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  .show {
+    display: none;
+  }
+  &:hover .show {
+    display: block;
+  }
+  .slick_list,
+  .slick_track,
+  .img {
+    height: 100%;
+  }
+  .slick_list{
+    width: 999999999%;
+  }
+  .slick_dots {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    padding: 0;
+
+    li {
+      margin: 2px;
+      display: inline-block;
+      list-style-type: none;
+      width: 13px;
+      height: 13px;
+      
+      border-radius: 50%;
+      button {
+       color:white;
+        border: none;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        text-indent: -9999px;
+        border: 1px solid black;
+      }
+    }
+    .active {
+      border: 1px solid red;
+    }
+  }
+}

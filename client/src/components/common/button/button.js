@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './button.module.scss';
 
-const Button =()=>(
-    <div className={styles.button}>
-        <p>Button</p>
-    </div>
+const Button =({children})=>(
+    <button className={styles.btn}>
+        {children}
+    </button>
 )
 
 export default Button;
