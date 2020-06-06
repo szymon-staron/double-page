@@ -8,7 +8,7 @@ import ArrowRight from "./arrowRight";
 const Arrow = ({ direction, handleClick,color }) => (
   <div
     onClick={handleClick}
-    className={styles.arrow}
+    className={styles.arrows}
     css={css`
       ${direction === "right" ? `right:20px` : `left:30px`};
       img {

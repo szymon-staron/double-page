@@ -17,15 +17,10 @@
   .slick_list,
   .slick_track,
   .img {
-    width: 100%;
     height: 100%;
   }
-  .slick_list {
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-    }
+  .slick_list{
+    width: 999999999%;
   }
   .slick_dots {
     position: absolute;
@@ -40,15 +35,16 @@
       list-style-type: none;
       width: 13px;
       height: 13px;
-      border: 1px solid black;
+      
       border-radius: 50%;
       button {
-       
+       color:white;
         border: none;
         width: 13px;
         height: 13px;
         border-radius: 50%;
         text-indent: -9999px;
+        border: 1px solid black;
       }
     }
     .active {
