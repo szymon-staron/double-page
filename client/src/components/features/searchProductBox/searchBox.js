@@ -1,13 +1,13 @@
-import React from 'react';
-import styles from './searchBox.module.scss';
-import { NavLink } from "react-router-dom";
+import React from "react";
+import styles from "./searchBox.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars,faLightbulb} from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import SecondBanner from '../../common/banner/secondBanner';
+import FirstBanner from '../../common/banner/firstBanner';
 
-const searchBox =()=>{
-    return(
-        <div>
-             <section className={styles.searchProductBox}>
+const searchBox = () => {
+  return (
+      <section className={styles.searchProductBox}>
         <div className={styles.searchPanel}>
           <header className={styles.headerPanel}>
             <FontAwesomeIcon icon={faBars} className={styles.icon} />
@@ -19,70 +19,151 @@ const searchBox =()=>{
                 <a href="#">
                   <span className={styles.iconCircle}></span>
                   Akcesoria rowerowe
+                  <ul className={styles.hide}>
+                    <li>
+                      <a>Bagaznik</a>
+                    </li>
+                    <li>
+                      <a>siadełko</a>
+                    </li>
+                    <li>
+                      <a>dzwonek</a>
+                    </li>
+                    <li>
+                      <a>spojlery</a>
+                    </li>
+                  </ul>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <span className={styles.iconCircle}></span>
                   Bony podarunkowe
+                  <ul className={styles.hide}>
+                    <li>
+                      <a>Bagaznik</a>
+                    </li>
+                    <li>
+                      <a>siadełko</a>
+                    </li>
+                    <li>
+                      <a>dzwonek</a>
+                    </li>
+                    <li>
+                      <a>spojlery</a>
+                    </li>
+                  </ul>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <span className={styles.iconCircle}></span>
                   Części rowerowe
+                  <ul className={styles.hide}>
+                    <li>
+                      <a>Bagaznik</a>
+                    </li>
+                    <li>
+                      <a>siadełko</a>
+                    </li>
+                    <li>
+                      <a>dzwonek</a>
+                    </li>
+                    <li>
+                      <a>spojlery</a>
+                    </li>
+                  </ul>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <span className={styles.iconCircle}></span>
-                 Haki do ram
+                  Haki do ram
+                  <ul className={styles.hide}>
+                    <li>
+                      <a>Bagaznik</a>
+                    </li>
+                    <li>
+                      <a>siadełko</a>
+                    </li>
+                    <li>
+                      <a>dzwonek</a>
+                    </li>
+                    <li>
+                      <a>spojlery</a>
+                    </li>
+                  </ul>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <span className={styles.iconCircle}></span>
                   Hulajnogi
+                  <ul className={styles.hide}>
+                    <li>
+                      <a>Bagaznik</a>
+                    </li>
+                    <li>
+                      <a>siadełko</a>
+                    </li>
+                    <li>
+                      <a>dzwonek</a>
+                    </li>
+                    <li>
+                      <a>spojlery</a>
+                    </li>
+                  </ul>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <span className={styles.iconCircle}></span>
                   Koła opony
+                  <ul className={styles.hide}>
+                    <li>
+                      <a>Bagaznik</a>
+                    </li>
+                    <li>
+                      <a>siadełko</a>
+                    </li>
+                    <li>
+                      <a>dzwonek</a>
+                    </li>
+                    <li>
+                      <a>spojlery</a>
+                    </li>
+                  </ul>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <span className={styles.iconCircle}></span>
                   test productu
+                  <ul className={styles.hide}>
+                    <li>
+                      <a>Bagaznik</a>
+                    </li>
+                    <li>
+                      <a>siadełko</a>
+                    </li>
+                    <li>
+                      <a>dzwonek</a>
+                    </li>
+                    <li>
+                      <a>spojlery</a>
+                    </li>
+                  </ul>
                 </a>
               </li>
-             
             </ul>
           </div>
           <div className={styles.banners}>
-
-            <div className={[styles.banner, styles.secondBanner].join(" ")}>
-              <NavLink to="/news">
-                <FontAwesomeIcon icon={faLightbulb} className={styles.icon} />
-                <header>Nowości</header>
-                <p>Zobacz nową kolekcje produktów!</p>
-              </NavLink>
-            </div>
-            <div className={[styles.banner, styles.firstBanner].join(" ")}>
-          <NavLink to="/discount">
-            <p>wyjątkowa oferta tylko teraz</p>
-            <p>Wyprzedaż do</p>
-            <span>-50%</span>
-          </NavLink>
-        </div>
+           <SecondBanner height='100%'/>
+           <FirstBanner height='100%' width='100%' position='center'/>
           </div>
         </div>
       </section>
-        </div>
-    )
-
-}
-
+  );
+};
 
 export default searchBox;

@@ -1,7 +1,10 @@
 import React from 'react';
 import styles from './contentBox.module.scss';
 import ProductBox from '../../common/productBox/productBox';
-const ContentBox =()=>{
+import PropTypes from 'prop-types';
+
+
+const ContentBox =({title})=>{
 
     return(
         <section className={styles.contentProduct}>
@@ -18,7 +21,7 @@ const ContentBox =()=>{
         </div>
         <div className={styles.content} id="content">
         <header >
-          <h3 className={styles.title}>Części</h3>
+          <h3 className={styles.title}>{title}</h3>
         </header>
         <ProductBox width="calc(33% - 20px) " />
         <ProductBox width="calc(33% - 20px) " />
@@ -41,5 +44,10 @@ const ContentBox =()=>{
    
     )
 }
-
+ContentBox.propTypes ={
+  title: PropTypes.string.isRequired,
+}
+ContentBox.defaultProps ={
+  title: 'Części',
+}
 export default ContentBox;
