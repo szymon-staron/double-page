@@ -7,12 +7,15 @@ import {
   faLock,
 } from "@fortawesome/free-solid-svg-icons";
 import {NavLink} from 'react-router-dom';
+import Logo from '../../common/logo/logo';
 
 const TopIside = () => {
   return (
     <div className={styles.topInside}>
       <div className={styles.containerNav}>
-        <div className={styles.topLogo}></div>
+        <div className={styles.topLogo}>
+          <Logo/>
+        </div>
         <div className={styles.topSearch}>
           <form method="get" id="searchSimple" className={styles.form}>
             <input

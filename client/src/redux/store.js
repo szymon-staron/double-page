@@ -1,5 +1,5 @@
-import {combineReducers,createStore} from 'redux';
-import initialState from './initialState';
+import {combineReducers, createStore,applyMiddleware,compose} from 'redux';
+//import thunk from 'redux-thunk';
 
 
 Object.keys(initialState).forEach(item=>{
@@ -13,7 +13,6 @@ Object.keys(initialState).forEach(item=>{
 
 const store = createStore(
     //combinedReducers,
-    initialState,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
