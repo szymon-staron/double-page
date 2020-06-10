@@ -1,0 +1,25 @@
+{
+  "name": "bikeshop",
+  "version": "1.0.0",
+  "description": "null",
+  "main": "app.js",
+  "repository": "https://github.com/AnGeL991/double-page.git",
+  "author": "Adrian Markuszewski <adrian991999@wp.pl>",
+  "license": "MIT",
+  "scripts": {
+    "start:server": "nodemon server.js",
+    "build": "cd client && yarn install && yarn build",
+    "postinstall": "cd client && yarn install"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.18",
+    "nodemon": "^2.0.4"
+  }
+}

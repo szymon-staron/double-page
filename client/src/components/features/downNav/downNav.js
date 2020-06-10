@@ -8,6 +8,7 @@ const DownNav = () => (
     <NavLink to="/product">Produkty</NavLink>
     <NavLink to="/bike-scott">Rowery Scott</NavLink>
     <NavLink to="/rental">Wypożyczalnia</NavLink>
+    <NavLink to="/servis">Serwis</NavLink>
     <NavLink to="/blog">Blog</NavLink>
     <NavLink to="/news">Nowości</NavLink>
     <NavLink to="/sale">Wyprzedaż</NavLink>
