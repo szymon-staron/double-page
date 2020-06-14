@@ -88,9 +88,20 @@ const AboutUs = () => (
             serdecznie zapraszamy!
           </p>
           <p className={styles.paragraph}>
-          <span className={styles.new_line}> Osobiście można odwiedzać nasze sklepy w Miastach:</span> <span className={styles.new_line}>O/Kalisz, ul. Św.
-            Michała 130</span> <span className={styles.new_line}>O/Kalisz 2, ul. Poznańska 119</span> <span className={styles.new_line}> O/Ostrów, ul.
-            Limanowskiego 107</span>
+            <span className={styles.new_line}>
+              {" "}
+              Osobiście można odwiedzać nasze sklepy w Miastach:
+            </span>{" "}
+            <span className={styles.new_line}>
+              O/Kalisz, ul. Św. Michała 130
+            </span>{" "}
+            <span className={styles.new_line}>
+              O/Kalisz 2, ul. Poznańska 119
+            </span>{" "}
+            <span className={styles.new_line}>
+              {" "}
+              O/Ostrów, ul. Limanowskiego 107
+            </span>
           </p>
           <p className={styles.paragraph}>
             <span className={styles.new_line}>
@@ -111,7 +122,9 @@ const AboutUs = () => (
               Nip: 6181600697 Regon: 250437690
             </span>
           </p>
-          <p className={styles.paragraph}>Data aktualizacji: 2019-04-09 13:29:00</p>
+          <p className={styles.paragraph}>
+            Data aktualizacji: 2020-06-14 14:29:00
+          </p>
         </section>
       </div>
     </div>

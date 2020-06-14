@@ -1,20 +1,13 @@
 import React from "react";
 import styles from "./contact.module.scss";
-import FirstBanner from '../../common/banner/firstBanner';
-import SecondBanner from '../../common/banner/secondBanner';
-
-
+import FirstBanner from "../../common/banner/firstBanner";
+import SecondBanner from "../../common/banner/secondBanner";
 
 const Contact = () => (
   <div className={styles.conteiner}>
     <div className={styles.banner}>
-      <FirstBanner 
-      width='100%'
-      margin='0'
-      height='70%'
-      position='center'
-      />
-      <SecondBanner height='70%'/>
+      <FirstBanner width="100%" margin="0" height="70%" position="center" />
+      <SecondBanner height="70%" />
     </div>
     <div className={styles.Contact}>
       <header>
