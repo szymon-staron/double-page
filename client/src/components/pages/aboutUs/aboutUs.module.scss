@@ -21,15 +21,10 @@ margin-top: 20px;
     display:inline-block;
 }
 
-.header{
 
-    &__title{
-        
-    }
-}
 
 .section{
-    width: 700px;
+    width: 650px;
 }
 .parent {
     display: grid;
@@ -39,6 +34,11 @@ margin-top: 20px;
     grid-row-gap: 0px;
     }
 
-.paragraph{
-    
-}
+    .new_line {
+        display: block;
+        padding-bottom: 2px;
+      }
+
+      .paragraph{
+          margin-bottom: 10px;
+      }
