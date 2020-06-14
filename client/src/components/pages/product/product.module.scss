@@ -1,0 +1,7 @@
+@import '../../../styles/settings.scss';
+
+.productPage{
+   display: grid;
+   grid-template-columns: 0.25fr 1.75fr;
+   margin-top:30px;
+}
