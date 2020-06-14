@@ -6,6 +6,7 @@ import Contact from "./components/pages/contact/contact";
 import Home from "./components/pages/home/home"
 import Product from './components/pages/product/product'
 import Blog from './components/pages/blog/blog';
+import AboutUs from "./components/pages/aboutUs/aboutUs";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/blog" component={Blog} />
         <Route exact path="/sale" component={Home} />
         <Route exact path="/contact" component={Contact} />
+        <Route exact path="/about" component={AboutUs}/>
       </Switch>
     </MainLayout>
   );

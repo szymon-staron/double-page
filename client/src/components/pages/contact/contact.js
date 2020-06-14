@@ -1,13 +1,20 @@
 import React from "react";
 import styles from "./contact.module.scss";
-import img01 from "./baner_lewa01.jpg";
-import png02 from "./baner_lewa02.png";
+import FirstBanner from '../../common/banner/firstBanner';
+import SecondBanner from '../../common/banner/secondBanner';
+
+
 
 const Contact = () => (
   <div className={styles.conteiner}>
-    <div className={styles.img}>
-      <img className={styles.img__size} src={img01} alt={"..."} />
-      <img className={styles.img__size} src={png02} alt={"...."} />
+    <div className={styles.banner}>
+      <FirstBanner 
+      width='100%'
+      margin='0'
+      height='70%'
+      position='center'
+      />
+      <SecondBanner height='70%'/>
     </div>
     <div className={styles.Contact}>
       <header>
@@ -16,7 +23,7 @@ const Contact = () => (
 
       <section className={styles.article}>
         <article className={styles.article__shop}>
-          <div>
+          <div className={styles.eachAdress}>
             <h3>Warszawa</h3>
             <p>
               <span className={styles.new_line}> Adres: ul.Lorem </span>
@@ -24,7 +31,7 @@ const Contact = () => (
               <span className={styles.new_line}> Czynne: 24:00-24:00</span>
             </p>
           </div>
-          <div>
+          <div className={styles.eachAdress}>
             <h3>Częstochowa</h3>
             <p>
               <span className={styles.new_line}> Adres: ul.Lorem </span>
@@ -32,9 +39,7 @@ const Contact = () => (
               <span className={styles.new_line}>Telefon: 214124124</span>
             </p>
           </div>
-
-          <div>
-            {" "}
+          <div className={styles.eachAdress}>
             <h3>Kraków</h3>
             <p>
               <span className={styles.new_line}> Adres: ul.Lorem</span>
@@ -42,7 +47,7 @@ const Contact = () => (
               <span className={styles.new_line}>Czynne 24:00-24:00</span>
             </p>
           </div>
-          <div>
+          <div className={styles.eachAdress}>
             <h3>Poznań</h3>
             <p>
               <span className={styles.new_line}> Adres: ul.Lorem</span>

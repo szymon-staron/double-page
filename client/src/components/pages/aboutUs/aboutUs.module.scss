@@ -1,0 +1,44 @@
+@import "../../../styles/settings.scss";
+.root{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        
+}
+.about{
+    font-family: $font-family;
+    width: 100%;
+    padding:30px;
+    display: inline-block;
+   
+}
+.banner{
+    width: 100%;
+margin-top: 20px;
+    height: 500px;
+    display:inline-block;
+}
+
+.header{
+
+    &__title{
+        
+    }
+}
+
+.section{
+    width: 700px;
+}
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+.paragraph{
+    
+}
